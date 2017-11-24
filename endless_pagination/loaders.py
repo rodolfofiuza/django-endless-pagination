@@ -3,9 +3,7 @@
 from __future__ import unicode_literals
 
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.importlib import import_module
-
-
+from django.utils.module_loading import import_module
 def load_object(path):
     """Return the Python object represented by dotted *path*."""
     i = path.rfind('.')
